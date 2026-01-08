@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgeWizard - The Ultimate Python Age Calculation Library</title>
-    <meta name="description" content="AgeWizard is a powerful, lightweight Python library for precise age calculation, zodiac sign identification, life stage classification, and birthday countdowns.">
-    <meta name="keywords" content="Python, Age Calculation, AgeWizard, Date of Birth, Zodiac Signs, Life Stages, PyPI, GitHub">
+    <meta name="description"
+        content="AgeWizard is a powerful, lightweight Python library for precise age calculation, zodiac sign identification, life stage classification, and birthday countdowns.">
+    <meta name="keywords"
+        content="Python, Age Calculation, AgeWizard, Date of Birth, Zodiac Signs, Life Stages, PyPI, GitHub">
     <meta name="author" content="KamranProjects">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kamranprojects.github.io/">
     <meta property="og:title" content="AgeWizard - Precise Python Age Calculation">
-    <meta property="og:description" content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
+    <meta property="og:description"
+        content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
     <meta property="og:image" content="https://opengraph.githubassets.com/1/KamranProjects/agewizard">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://kamranprojects.github.io/">
     <meta property="twitter:title" content="AgeWizard - Precise Python Age Calculation">
-    <meta property="twitter:description" content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
+    <meta property="twitter:description"
+        content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
     <meta property="twitter:image" content="https://opengraph.githubassets.com/1/KamranProjects/agewizard">
 
     <!-- Google Search Console Verification -->
-    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" /> -->
+    <meta name="google-site-verification" content="i-ykahV9ZYofyxHzoh-OsOPB-7epsiUcM34kWexF-84" />
+
+    <!-- Schema.org SoftwareApplication Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AgeWizard",
+      "operatingSystem": "All",
+      "applicationCategory": "DeveloperApplication",
+      "description": "A powerful, lightweight Python library for precise age calculation, zodiac sign identification, and life stage classification.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "KamranProjects",
+        "url": "https://github.com/KamranProjects"
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
@@ -47,10 +75,12 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Calculate Age Like a <span class="highlight">Wizard</span></h1>
-                <p>A lightweight, high-performance Python library for precise age analysis, date-of-birth validation, and cosmic insights.</p>
+                <p>A lightweight, high-performance Python library for precise age analysis, date-of-birth validation,
+                    and cosmic insights.</p>
                 <div class="hero-cta">
                     <a href="#installation" class="btn primary">Get Started</a>
-                    <a href="https://github.com/KamranProjects/agewizard" target="_blank" class="btn secondary">View Source</a>
+                    <a href="https://github.com/KamranProjects/agewizard" target="_blank" class="btn secondary">View
+                        Source</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -100,6 +130,34 @@ age = wizard.calculate_age(<span class="string">"1995-05-24"</span>)
             </div>
         </section>
 
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How to get zodiac sign in Python?</h3>
+                    <p>With AgeWizard, getting a zodiac sign is simple. Just pass a date of birth to the
+                        <code>calculate_age</code> method, and it will automatically identify the astrological sign
+                        associated with that date.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How to calculate exact age in Python?</h3>
+                    <p>AgeWizard provides high-precision calculations. It doesn't just give you the year; it calculates
+                        the exact years, months, and days from the date of birth to the current or a specific date.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the best Python library for age analysis?</h3>
+                    <p>AgeWizard is built specifically for age analysis, offering unique features like life stage
+                        classification (Infant, Toddler, Teenager, etc.) and birthday countdowns without any external
+                        dependencies.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How to validate date of birth in Python?</h3>
+                    <p>AgeWizard includes strict validation rules to ensure that input dates are realistic and correctly
+                        formatted, preventing errors in your data processing pipelines.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="installation" class="installation">
             <h2>Quick Installation</h2>
             <p>Get up and running in seconds with pip.</p>
@@ -131,4 +189,5 @@ age = wizard.calculate_age(<span class="string">"1995-05-24"</span>)
         }
     </script>
 </body>
+
 </html>

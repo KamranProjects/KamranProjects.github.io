@@ -154,9 +154,17 @@ pre {
     color: #e2e8f0;
 }
 
-.keyword { color: #c678dd; }
-.string { color: #98c379; }
-.comment { color: #5c6370; }
+.keyword {
+    color: #c678dd;
+}
+
+.string {
+    color: #98c379;
+}
+
+.comment {
+    color: #5c6370;
+}
 
 .features {
     padding: 8rem 5%;
@@ -205,6 +213,35 @@ pre {
     padding: 8rem 5%;
     text-align: center;
     background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+}
+
+.faq {
+    padding: 8rem 5%;
+    background-color: rgba(15, 23, 42, 0.5);
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.faq-item p {
+    color: var(--text-muted);
 }
 
 .installation h2 {
@@ -267,13 +304,16 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
     .hero-content p {
         margin-left: auto;
         margin-right: auto;
     }
+
     .hero-cta {
         justify-content: center;
     }
+
     .hero-content h1 {
         font-size: 3rem;
     }
