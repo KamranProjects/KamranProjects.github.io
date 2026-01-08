@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeWizard - The Ultimate Python Age Calculation Library</title>
+    <meta name="description" content="AgeWizard is a powerful, lightweight Python library for precise age calculation, zodiac sign identification, life stage classification, and birthday countdowns.">
+    <meta name="keywords" content="Python, Age Calculation, AgeWizard, Date of Birth, Zodiac Signs, Life Stages, PyPI, GitHub">
+    <meta name="author" content="KamranProjects">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kamranprojects.github.io/">
+    <meta property="og:title" content="AgeWizard - Precise Python Age Calculation">
+    <meta property="og:description" content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/KamranProjects/agewizard">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kamranprojects.github.io/">
+    <meta property="twitter:title" content="AgeWizard - Precise Python Age Calculation">
+    <meta property="twitter:description" content="Calculate exact age, identify zodiac signs, and determine life stages with the AgeWizard Python library.">
+    <meta property="twitter:image" content="https://opengraph.githubassets.com/1/KamranProjects/agewizard">
+
+    <!-- Google Search Console Verification -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" /> -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AgeWizard</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="https://github.com/KamranProjects/agewizard" target="_blank">GitHub</a></li>
+                <li><a href="https://pypi.org/project/agewizard/" target="_blank">PyPI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Calculate Age Like a <span class="highlight">Wizard</span></h1>
+                <p>A lightweight, high-performance Python library for precise age analysis, date-of-birth validation, and cosmic insights.</p>
+                <div class="hero-cta">
+                    <a href="#installation" class="btn primary">Get Started</a>
+                    <a href="https://github.com/KamranProjects/agewizard" target="_blank" class="btn secondary">View Source</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glass-card">
+                    <pre><code><span class="keyword">from</span> agewizard <span class="keyword">import</span> AgeWizard
+
+wizard = AgeWizard()
+age = wizard.calculate_age(<span class="string">"1995-05-24"</span>)
+<span class="comment"># Output: 28 Years, 7 Months, 15 Days</span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Powerful Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3>Precise Calculation</h3>
+                    <p>Calculate exact age in years, months, and days with absolute precision.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">♈</div>
+                    <h3>Zodiac Identification</h3>
+                    <p>Automatically identify zodiac signs based on the date of birth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌱</div>
+                    <h3>Life Stages</h3>
+                    <p>Classify age into life stages from infancy to senior adulthood.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⏳</div>
+                    <h3>Next Birthday</h3>
+                    <p>Get a precise countdown to the next birthday celebration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Zero Dependencies</h3>
+                    <p>Lightweight and fast with no external requirements. Pure Python.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🌍</div>
+                    <h3>Global Locales</h3>
+                    <p>Supports multiple date formats and global date standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <h2>Quick Installation</h2>
+            <p>Get up and running in seconds with pip.</p>
+            <div class="code-block">
+                <code id="pip-command">pip install agewizard</code>
+                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 KamranProjects. Built with ❤️ for the Python Community.</p>
+            <div class="social-links">
+                <a href="https://github.com/KamranProjects/agewizard">GitHub</a>
+                <a href="https://pypi.org/project/agewizard/">PyPI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            const command = document.getElementById('pip-command').innerText;
+            navigator.clipboard.writeText(command).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.innerText = 'Copied!';
+                setTimeout(() => btn.innerText = 'Copy', 2000);
+            });
+        }
+    </script>
+</body>
+</html>
